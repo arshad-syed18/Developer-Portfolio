@@ -13,7 +13,8 @@ const Stars = (props) => {
 
   })
 
-  const sphere = random.inSphere(new Float32Array(10000), {radius: 1.2})
+  const [sphere] = useState(() => random.inSphere(new Float32Array(5001), {radius: 1.2}));
+
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props} >
