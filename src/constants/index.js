@@ -1,23 +1,25 @@
 import {
     mobile,
-    backend,
-    creator,
+    stack,
+    ai,
     web,
     javascript,
-    typescript,
+    java,
     html,
     css,
     reactjs,
-    redux,
+    dart,
+    firebase,
+    python,
     tailwind,
     nodejs,
-    mongodb,
+    sql,
     git,
     figma,
     docker,
     meta,
-    starbucks,
-    tesla,
+    cmrit,
+    heapoly,
     shopify,
     carrent,
     jobit,
@@ -46,16 +48,16 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Android Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Full Stack Developer",
+      icon: stack,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "AI Application Developer",
+      icon: ai,
     },
   ];
   
@@ -73,17 +75,18 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "Python",
+      icon: python,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -93,8 +96,16 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "SQL",
+      icon: sql,
+    },
+    {
+      name: "Firebase",
+      icon: firebase,
+    },
+    {
+      name: "Dart",
+      icon: dart,
     },
     {
       name: "Three JS",
@@ -104,72 +115,40 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Computer Science Engineering Student",
+      company_name: "CMRIT",
+      icon: cmrit,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "December 2021 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Created and managed web applications utilizing React.js and other relevant technologies as part of various projects.",
+        "Developed Android applications utilizing Java, Flutter, and other relevant technologies including Firebase as part of different projects.",
+        "Collaborated with peers and classmates to produce top-notch projects while gaining expertise in industry-standard development practices.",
+        "Ensured cross-browser compatibility and implemented responsive design in projects. Ensured a bug free experience for users.",
+        "Participated in code reviews and hackathons, providing and incorporating feedback from others to enhance my skills and contribute to the team's success.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "CS Diploma Student",
+      company_name: "HEA Polytechnic",
+      icon: heapoly,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Acquired proficiency in C, C++, Python, and Java, as well as delving into advanced topics like computer vision.",
+        "Developed and implemented a real-time Intrusion Detection System using Python, enhancing my machine learning skills.",
+        "Explored the potential applications of AI and Machine Learning in software development, gaining valuable insights.",
+        "Gained knowledge and expertise in various computer subjects such as data structures and algorithms, database management systems, and computer networks and coding practices.",
       ],
     },
   ];
   
   const testimonials = [
+    // TODO:  need to change with mentor feedback, etc.
     {
       testimonial:
         "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -197,6 +176,7 @@ import {
   ];
   
   const projects = [
+    // TODO:  need to update with real projects
     {
       name: "Car Rent",
       description:

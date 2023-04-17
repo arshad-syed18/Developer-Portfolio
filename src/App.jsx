@@ -14,7 +14,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks />     Include mentor or professor feedbacks */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
