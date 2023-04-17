@@ -36,15 +36,14 @@ const About = () => {
         variants={fadeIn("","", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
-        // TODO: Add content
-        add contebt here about urself
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am an aspiring software developer with a strong foundation in computer science and a passion for creating innovative solutions using cutting-edge technologies. 
+        I have experience in Java, Python, and JavaScript and have worked with frameworks like React, Node.js, threeJS, and Flutter.
+        I have also worked with databases like MySQL and Firebase.
+        I have knowledge in AI and its application in software development, and I am currently learning more about it. 
+        I have an interest in developing applications that provide AI based solutions to real-world problems.
+        With a focus on collaboration and user-centric design, I am dedicated to creating efficient, scalable, and intuitive applications that solve real-world problems. 
+        Let's work together to turn your ideas into reality!
       </motion.p>
-      // Todo: Add services, change to ur own <br/>
       <div className='mt-20 flex flex-wrap gap-10'>
         
         {services.map((service, index) => (
