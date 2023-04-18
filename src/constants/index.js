@@ -15,16 +15,12 @@ import {
     nodejs,
     sql,
     git,
-    figma,
-    docker,
-    meta,
     cmrit,
     heapoly,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    evoter,
+    objdet,
     threejs,
+    easymart,
   } from "../assets";
   
   export const navLinks = [
@@ -137,7 +133,7 @@ import {
       company_name: "HEA Polytechnic",
       icon: heapoly,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Jan 2018 - Dec 2021",
       points: [
         "Acquired proficiency in C, C++, Python, and Java, as well as delving into advanced topics like computer vision.",
         "Developed and implemented a real-time Intrusion Detection System using Python, enhancing my machine learning skills.",
@@ -176,69 +172,72 @@ import {
   ];
   
   const projects = [
-    // TODO:  need to update with real projects
     {
-      name: "Car Rent",
+      name: "eVoter",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "The eVoter project is an online platform for voting and managing elections. It aims to increase accessibility and convenience for voters by allowing them to cast their votes online. With eVoter, voters can securely cast their votes from the comfort of their homes, while election administrators can easily manage the election process with real-time updates and analytics.",
       tags: [
         {
-          name: "react",
+          name: "reactJS",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "nodeJS",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "MySQL",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "MaterialUI",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: evoter,
+      source_code_link: "https://github.com/arshad-syed18/eVoter",
     },
     {
-      name: "Job IT",
+      name: "Real Time Intrusion Detection System",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Real-time Intrusion Detector is an AI-based application that uses YOLOv4 computer vision to detect unauthorized objects and persons in a video feed. It flags the objects and persons if their accuracy percentage is high and sends a message to the designated person.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "OpenCV",
+          color: "pink-text-gradient",
         },
         {
-          name: "restapi",
+          name: "YoloV4",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "ObjectDetection",
+          color: "blue-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: objdet,
+      source_code_link: "https://github.com/arshad-syed18/Real-time-intrusion-detector",
     },
     {
-      name: "Trip Guide",
+      name: "EasyMart",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "An ecommerce app built with Flutter and Firebase as the backend, aimed at allowing businesses to sell their products online securely. Features include browsing products and product details, adding products to the shopping cart, secure checkout with Firebase authentication and payment processing, view order history, and admin access to manage products. ",
       tags: [
         {
-          name: "nextjs",
+          name: "Flutter",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
-          color: "green-text-gradient",
+          name: "Firebase",
+          color: "text-yellow-500",
         },
         {
-          name: "css",
+          name: "Ecommerce",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: easymart,
+      source_code_link: "https://github.com/arshad-syed18/EasyMart",
     },
   ];
   

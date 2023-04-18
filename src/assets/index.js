@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import githubcolor from "./githubcolor.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -28,15 +29,16 @@ import shopify from "./company/shopify.png";
 import cmrit from "./company/cmrit.png";
 import heapoly from "./company/heapoly.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import evoter from "./evoter.png";
+import objdet from "./objdet.png";
+import easymart from "./easymart.png";
 
 export {
   logo,
   stack,
   ai,
   mobile,
+  githubcolor,
   dart,
   web,
   firebase,
@@ -60,7 +62,7 @@ export {
   shopify,
   cmrit,
   heapoly,
-  carrent,
-  jobit,
-  tripguide,
+  evoter,
+  objdet,
+  easymart,
 };
