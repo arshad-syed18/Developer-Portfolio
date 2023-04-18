@@ -25,5 +25,26 @@ const Tech = () => {
     
   )
 }
+const TechMobile = () => {
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>My Technical Expertise</p>
+        <h2 className={styles.sectionHeadText}>Technologies.</h2>
+      </motion.div>
+      <div className="flex flex-row flex-wrap justify-center gap-10 ">
+        {technologies.map((technology) => (
+          <div key={technology.name} className="w-20 h-20 text-center rounded-full bg-white">
+            <img src={technology.icon} className="w-16 h-16 mx-auto my-2" alt={technology.name} />
+            <p className="mt-2 font-medium text-[14px]">{technology.name}</p>
+          </div>
+        ))}
+      </div>
 
-export default SectionWrapper(Tech, "tech")
+    </>
+  );
+};
+
+
+const isMobile = window.innerWidth <= 768;
+export default SectionWrapper(isMobile ? TechMobile : Tech, "tech")
