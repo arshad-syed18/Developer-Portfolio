@@ -59,8 +59,14 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
         >
-          I have worked on a few projects, some of them are open source and some are private. 
-          I have also contributed to some open source projects. You can find all my projects on my GitHub profile.
+          I have worked on a few projects, both personal and professional. I have
+          worked on projects covering a wide range of domains, from web
+          development to machine learning. I have also worked on projects
+          involving the use of various technologies, from ReactJS to Python.
+          I have worked with threeJS, a JavaScript library and API used to create
+          and display animated 3D computer graphics in a web browser. 
+          I have also worked on android applications using the
+          flutter, dart, java and kotlin in Android Studio.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

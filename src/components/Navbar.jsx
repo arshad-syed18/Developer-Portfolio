@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import {styles} from '../styles'
 import {navLinks} from '../constants'
-import{logo, menu, close} from '../assets'
+import{logo, menu, close, githubcolor} from '../assets'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -22,6 +22,9 @@ const Navbar = () => {
           <p className='text-white text-[18px] font-bold cursor-pointer flex'> Syed Arshad </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+          <Link to='https://github.com/arshad-syed18' target='_blank'>
+            <img src={githubcolor} alt='GitHub' className='w-9 h-9 cursor-pointer'/>
+          </Link>
           {navLinks.map((link) => (
             <li key={link.id} className={`${active === link.title ? "text-white":"text-secondary" } 
               hover:text-white text-[18px] font-medium cursor-pointer`}
@@ -29,7 +32,10 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          
         </ul>
+        
+
         <div className='sm:hidden flex flex-1 justify-end items-center'>
             <img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer'
             onClick={() => setToggle(!toggle)}/>
