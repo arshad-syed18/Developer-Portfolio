@@ -13,7 +13,7 @@ const Stars = (props) => {
 
   })
 
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5001), {radius: 1.2}));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(2001), {radius: 1.2}));
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
