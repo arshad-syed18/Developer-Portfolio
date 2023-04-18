@@ -18,7 +18,7 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const {name, value} = e.target
-    setForm({...form, [name]: val})
+    setForm({...form, [name]: value})
   }
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -95,13 +95,13 @@ const Contact = () => {
             </label>
             <button
               type='submit'
-              className='bg-tertiary py-3 px-8 outlined-none w-fit text-white font*bold shadow-md shadow-primary rounded-xl'
+              className='bg-tertiary py-3 px-8 outlined-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
               >
                 {loading ? 'sending...' : 'send'}
               </button>
           </form>
       </motion.div>
-      <motion.div variants={slideIn("right","tween", 0.2, 1)} className='xl:flex-1 xl:h-auto md:h-[550px] h[350px]'>
+      <motion.div variants={slideIn("right","tween", 0.2, 1)} className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
         <EarthCanvas />
       </motion.div>
 

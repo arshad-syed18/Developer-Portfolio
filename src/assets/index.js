@@ -23,6 +23,7 @@ import python from "./tech/python.png";
 import tailwind from "./tech/tailwind.png";
 import java from "./tech/java.png";
 import threejs from "./tech/threejs.svg";
+import icosahedron from './icosahedron.svg'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -37,6 +38,7 @@ export {
   logo,
   stack,
   ai,
+  icosahedron,
   mobile,
   githubcolor,
   dart,
