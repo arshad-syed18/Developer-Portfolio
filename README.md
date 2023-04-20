@@ -6,7 +6,7 @@ Used a computer desk 3D model and a model of the earth. In addition to having ic
 ## Live demo
 To see a live demo of my portfolio, visit any of the below links
 
-https://www.syedarshad.tech 
+https://www.syedarshad.tech <br />
 https://arshad-syed18.github.io
 
 ## Installation
