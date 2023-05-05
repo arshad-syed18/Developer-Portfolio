@@ -29,6 +29,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import cmrit from "./company/cmrit.png";
 import heapoly from "./company/heapoly.png";
+import linkedin from "./linkedin.svg";
 
 import evoter from "./evoter.png";
 import objdet from "./objdet.png";
@@ -37,6 +38,7 @@ import easymart from "./easymart.png";
 export {
   logo,
   stack,
+  linkedin,
   ai,
   icosahedron,
   mobile,

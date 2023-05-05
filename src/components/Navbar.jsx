@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {styles} from '../styles'
 import {navLinks} from '../constants'
 import{logo, menu, close, githubcolor} from '../assets'
-
+import {linkedin} from '../assets'
 const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
@@ -24,6 +24,9 @@ const Navbar = () => {
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           <Link to='https://github.com/arshad-syed18' target='_blank'>
             <img src={githubcolor} alt='GitHub' className='w-9 h-9 cursor-pointer'/>
+          </Link>
+          <Link to='https://www.linkedin.com/in/syed-arshad-6a2728173/' target='_blank'>
+            <img src={linkedin} alt='LinkedIn' className='w-9 h-9 cursor-pointer'/>
           </Link>
           {navLinks.map((link) => (
             <li key={link.id} className={`${active === link.title ? "text-white":"text-secondary" } 
