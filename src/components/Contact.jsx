@@ -15,6 +15,7 @@ const Contact = () => {
     message: ''
   })
   const [loading, setLoading] = useState(false)
+  const [formError, setFormError] = useState(false)
 
   const handleChange = (e) => {
     const {name, value} = e.target
@@ -22,6 +23,10 @@ const Contact = () => {
   }
   const handleSubmit = (e) => {
     e.preventDefault()
+    if(!form.name || !form.email || !form.message) {
+      setFormError(true)
+      return
+    }
     setLoading(true)
 
     emailjs.send(
@@ -32,13 +37,14 @@ const Contact = () => {
         to_name: 'Arshad',
         from_email: form.email,
         to_email: 'arshad18syed@gmail.com',
-        message: form.message
+        message: form.message+",\n\nSent by "+form.email+"\n"+form.name
       },
       'pizLv6fhE63YE5xD_'
     )
     .then((result) => {
       setLoading(false)
       alert('Thank you. I will get back to you as soon as possible.');
+      setFormError(false)
       setForm({
         name: '',
         email: '',
@@ -67,9 +73,11 @@ const Contact = () => {
                 name='name' 
                 value={form.name}
                 placeholder="What's your name?" 
-                onChange={handleChange} 
-                className='bg-tertiary py-4 px-6 rounded-xl placeholder:text-secondary text-white outlined-none border-none font-medium' 
+                onChange={handleChange}
+                className={`bg-tertiary py-4 px-6 rounded-xl placeholder:text-secondary text-white font-medium 
+                ${formError && !form.name && 'border-2 border-red-500'}`}
               />
+              {formError && !form.name && <p className="text-red-500">Please fill in your name</p>}
             </label>
             <label className='flex flex-col'>
               <span className='text-white font-medium mb-4'>Your Email</span>
@@ -78,9 +86,10 @@ const Contact = () => {
                 name='email' 
                 value={form.email}
                 placeholder="What's your email?" 
-                onChange={handleChange} 
-                className='bg-tertiary py-4 px-6 rounded-xl placeholder:text-secondary text-white outlined-none border-none font-medium' 
+                onChange={handleChange}
+                className={`bg-tertiary py-4 px-6 rounded-xl placeholder:text-secondary text-white font-medium ${formError && !form.email && 'border-2 border-red-500'}`}
               />
+              {(!form.email && formError) && <p className="text-red-500 text-sm">Please enter your email</p>}
             </label>
             <label className='flex flex-col'>
               <span className='text-white font-medium mb-4'>Your Message</span>
@@ -89,10 +98,12 @@ const Contact = () => {
                 name='message' 
                 value={form.message}
                 placeholder="What do you want to say?" 
-                onChange={handleChange} 
-                className='bg-tertiary py-4 px-6 rounded-xl placeholder:text-secondary text-white outlined-none border-none font-medium' 
+                onChange={handleChange}
+                className={`bg-tertiary py-4 px-6 rounded-xl placeholder:text-secondary text-white font-medium ${formError && !form.message && 'border-2 border-red-500'}`}
               />
+              {(!form.message && formError) && <p className="text-red-500 text-sm">Please enter your message</p>}
             </label>
+
             <button
               type='submit'
               className='bg-tertiary py-3 px-8 outlined-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
