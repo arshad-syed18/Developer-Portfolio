@@ -7,6 +7,8 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import githubcolor from "./githubcolor.png";
+import cv from "./cv.png";
+import heyyo from "./heyyo.jpg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -44,6 +46,7 @@ export {
   mobile,
   githubcolor,
   dart,
+  heyyo,
   web,
   firebase,
   github,
@@ -53,6 +56,7 @@ export {
   docker,
   figma,
   git,
+  cv,
   html,
   javascript,
   sql,

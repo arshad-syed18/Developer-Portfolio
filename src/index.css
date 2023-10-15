@@ -63,6 +63,7 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* standard property */
 }
 
 .green-text-gradient {
@@ -79,6 +80,7 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* standard property */
 }
 
 .blue-text-gradient {
@@ -96,6 +98,7 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* standard property */
 }
 
 .pink-text-gradient {
@@ -110,8 +113,10 @@
     #ec008c,
     #fc6767
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* standard property */
 }
 
 /* canvas- styles */
