@@ -36,10 +36,22 @@ import linkedin from "./linkedin.svg";
 import evoter from "./evoter.png";
 import objdet from "./objdet.png";
 import easymart from "./easymart.png";
+import gpt from "./gpt.png";
+import mistral from "./mistral.png";
+import stablediffusion from "./stablediffusion.png";
+import opensource from "./opensource.png";
+import sarvo from "./sarvo.jpg";
+import pixelthreads from "./pixelthreads.jpg";
 
 export {
   logo,
   stack,
+  gpt,
+  mistral,
+  stablediffusion,
+  sarvo,
+  pixelthreads,
+  opensource,
   linkedin,
   ai,
   icosahedron,

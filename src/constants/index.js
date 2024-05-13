@@ -22,6 +22,12 @@ import {
   objdet,
   threejs,
   easymart,
+  gpt,
+  mistral,
+  stablediffusion,
+  opensource,
+  sarvo,
+  pixelthreads,
 } from "../assets";
 
 export const navLinks = [
@@ -84,6 +90,14 @@ const technologies = [
     icon: reactjs,
   },
 
+  {
+    name: "GPT AI",
+    icon: gpt,
+  },
+  {
+    name: "Mistral AI",
+    icon: mistral,
+  },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -173,6 +187,56 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "SARVO - Virtual Elderly Companion Assistant",
+    description:
+      "SARVO: A Voice-Enabled Elderly Companion Assistant designed for natural language conversations, emotional support, personalized entertainment, and a reminder system, enhancing well-being among the elderly. It is an emotionally capable companion and assistant that can perform a variety of tasks and keep the elderly company.",
+    tags: [
+      {
+        name: "MisralAI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SentimentAnalysis",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NLP",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "VoiceAssistant",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sarvo,
+    source_code_link: "https://github.com/arshad-syed18/Sarvo-AI-Assistant",
+  },
+  {
+    name: "PixelThreads- A 3D product store",
+    description:
+      "PixelThreads: Transforming e-commerce with a 3D product store where users can customize and visualize clothes in a unique and immersive way. Powered by React, Three.js, Framer Motion, and Tailwind CSS for a cutting-edge user experience. Explore the future of online shopping!",
+    tags: [
+      {
+        name: "ThreeJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "3D",
+        color: "green-text-gradient",
+      },
+      {
+        name: "StableDiffusion",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "AiImageGeneration",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pixelthreads,
+    source_code_link: "https://github.com/arshad-syed18/PixelThreads-3DProductStore",
+  },
   {
     name: "eVoter",
     description:
