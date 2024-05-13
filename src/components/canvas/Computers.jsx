@@ -1,16 +1,16 @@
-import {Suspense, useEffect, useState} from 'react'
-import {Canvas} from '@react-three/fiber'
+import { Suspense, useEffect, useState } from 'react'
+import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, SpotLight, useGLTF } from '@react-three/drei'
- import CanvasLoader from '../loader'
+import CanvasLoader from './Loader'
 
-const Computers = ({isMobile}) => {
+const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
   return (
     <mesh>
-      <hemisphereLight 
-        intensity={0.8}  
-        groundColor="black"/>
-      <pointLight 
+      <hemisphereLight
+        intensity={0.8}
+        groundColor="black" />
+      <pointLight
         intensity={1} />
 
       <SpotLight
@@ -21,10 +21,10 @@ const Computers = ({isMobile}) => {
         castShadow
         shadow-mapSize-width={1024}
       />
-      <primitive 
-        object={computer.scene} 
+      <primitive
+        object={computer.scene}
         scale={isMobile ? 0.5 : 0.75}
-        position={isMobile ?[0, -2.3, -1.6] : [0, -3.25, -1.5]}/>
+        position={isMobile ? [0, -2.3, -1.6] : [0, -3.25, -1.5]} />
 
     </mesh>
   )
@@ -48,21 +48,21 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop='demand'
       shadows
-      camera={{position:[20, 3, 5], fov:25}}
-      gl={{preserveDrawingBuffer: true}}
+      camera={{ position: [20, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-        enableZoom={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-        autoRotate={true}
-        autoRotateSpeed={-0.8}
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+          autoRotate={true}
+          autoRotateSpeed={-0.8}
         />
-        <Computers isMobile={isMobile}/>
+        <Computers isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
   )
-  }
+}
 export default ComputersCanvas
